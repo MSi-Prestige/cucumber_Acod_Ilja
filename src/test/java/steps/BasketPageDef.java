@@ -15,5 +15,15 @@ public class BasketPageDef {
     @And("click Apply coupon")
     public void clickApplyCoupon() {
         basketPage.aplyCoupon();
+        try {
+            Thread.sleep(9000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Then("get subtotal and compare with Total")
+    public void getSubtotalAndCompareWithTotal() {
+basketPage.compareSum();
     }
 }
