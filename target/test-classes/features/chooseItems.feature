@@ -1,7 +1,7 @@
-Feature: Choose items
+Feature: Choose items belt
   We choose some items from shop
 
-  Scenario: Choose items
+  Scenario: Choose item belt with correct coupon 10%
     Given click on purchase
     Then click Add to cart
     Then click shop basket
@@ -10,7 +10,6 @@ Feature: Choose items
     Then get subtotal and compare with Total
     Then click proceed to checkout
     And click place order
-
 
     #10% discount  compare from if. acodemy10off
     # get Subtotal 55.00  - 10%  and compare with Total  49.50

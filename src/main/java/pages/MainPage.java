@@ -7,4 +7,7 @@ public class MainPage {
         $(By.xpath("//h2[contains(@class, 'woocommerce-loop-product__title') and text() = 'Belt']")).click();
 
     }
+    public void clickPurchaseBeanie(){
+        $(By.xpath("//h2[contains(@class, 'woocommerce-loop-product__title') and text() = 'Beanie']")).click();
+    }
 }

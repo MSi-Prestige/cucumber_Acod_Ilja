@@ -8,4 +8,9 @@ public class MainPageDef {
     public void clickOnPurchase() {
         mainPage.clickPurchase();
     }
+
+    @Given("click on purchase beanie")
+    public void clickOnPurchaseBeanie() {
+        mainPage.clickPurchaseBeanie();
+    }
 }
