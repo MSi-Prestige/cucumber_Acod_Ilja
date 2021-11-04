@@ -16,7 +16,7 @@ public class BasketPageDef {
     public void clickApplyCoupon() {
         basketPage.aplyCoupon();
         try {
-            Thread.sleep(9000);
+            Thread.sleep(4000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -25,5 +25,20 @@ public class BasketPageDef {
     @Then("get subtotal and compare with Total")
     public void getSubtotalAndCompareWithTotal() {
 basketPage.compareSum();
+    }
+
+    @And("click place order")
+    public void clickPlaceOrder() {
+        basketPage.placeOrder();
+    }
+
+    @Then("click proceed to checkout")
+    public void clickProceedToCheckout() {
+        basketPage.clickProceedToCheckout();
+        try {
+            Thread.sleep(4000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }

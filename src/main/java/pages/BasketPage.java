@@ -1,5 +1,4 @@
 package pages;
-
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
 
@@ -21,4 +20,11 @@ public class BasketPage {
             sumWithOutDiscount.getText();
         System.out.println(sumWithOutDiscount.getText());
     }
+    public void clickProceedToCheckout() {
+        $(By.xpath("//*[@id='post-7']/div/div/div[2]/div/div/a")).click();
+    }
+    public void placeOrder(){
+        $(By.xpath("//*[@id='place_order']")).click();
+    }
 }
+
